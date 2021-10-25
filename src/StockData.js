@@ -1,11 +1,3 @@
-const companies = [ 'AAPL', 'MSFT', 'GOOGL', 'FB', 'ORCL', 'INTL' ];
-const API_KEY = 'e408098cdbd809d0471cf63a7bd4bd0a'
-
-`https://financialmodelingprep.com/api/v3/enterprise-values/${companies[0]}?apikey=${API_KEY}`
-
-
-
-
 const dummyData = [
   {name: "Apple Inc.", symbol: "AAPL", lastPrice: 140.64, change: -0.280000000000001, high: 141.74, low: 140.35, open: 141.5},
   {name: "Microsoft Corporation", symbol: "MSFT", lastPrice: 64.98, change: 0.109999999999999, high: 65.45, low: 64.76, open: 65.12},
