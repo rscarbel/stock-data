@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Nav from './components/Nav'
-import { BorwserRouter as Router, Route, Switch } from 'react-router-dom'
+import FortniteStore from './components/FortniteStore'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <Router>
         <div className="App">
           <Nav />
+          <FortniteStore />
           <div className="content">
             <Switch>
 
