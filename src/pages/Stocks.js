@@ -1,21 +1,25 @@
 import dummyData from "../StockData";
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 const Stocks = () => {
   return <> <h1>Stocks</h1>
   <table>
+    <tbody>
     <tr>
       <th>Company</th>
       <th>Symbol</th>
       <th>Company</th>
     </tr>
-      {dummyData.map(function(item){
-        return <tr>
+    <br />
+      {dummyData.map(function(item,index){
+        return <Link to={`/company/${index}`} key={index}><tr>
           <th>{item.name}</th>
           <th>{item.symbol}</th>
           <th>{item.lastPrice}</th>
-        </tr>
+        </tr><br /></Link>
       })}
+      </tbody>
   </table></>
 }
 
