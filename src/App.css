@@ -102,6 +102,7 @@ table {
 td,th {
   padding: 1em;
   overflow-x:auto;
+  text-align: left;
 }
 
 tr:nth-child(odd) {

@@ -17,7 +17,7 @@ function App() {
               <Route path='/' exact component={Home}/>
               <Route path='/stocks' exact component={Stocks}/>
               <Route path='/about' exact component={About}/>
-              <Route path="/company/:companyIndex">
+              <Route path="/company/:companyIndex" component={Company}>
               <Company />
               </Route>
             </Switch>
